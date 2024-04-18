@@ -209,7 +209,7 @@ const sendpasswordlink = async (req, res) => {
             from: process.env.MAIL_USER,
             to: email,
             subject: 'Password Reset Link',
-            text: `Please click on the following link to reset your password this link valid for 2 minutes: ${process.env.CLIENT_URL}/setPassword/${user.id}     : ${token} ` // Update with your client URL
+            text: `Please click on the following link to reset your password this link valid for 2 minutes: ${process.env.CLIENT_URL}/setPassword/${user.id}/${token} ` // Update with your client URL
         };
 
         // Send the email

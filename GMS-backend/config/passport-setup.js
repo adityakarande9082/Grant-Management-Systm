@@ -95,7 +95,7 @@ module.exports = function (passport) {
       passport.use(new LinkedInStrategy({
         clientID: '778l7kfkz7ngig',
         clientSecret: 'FiNGB5vBnzuCUxXO',
-        callbackURL: 'http://localhost:1010/auth/linkedin/callback',
+        callbackURL: 'http://localhost:3000/auth/linkedin/callback',
         scope: ['openid', 'email'],
     }, async (accessToken, refreshToken, profile, done) => {
         try {

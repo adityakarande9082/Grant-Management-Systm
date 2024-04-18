@@ -41,6 +41,19 @@ exports.getAllUserData = async (req, res) => {
     }
 };
 
+
+exports.getAllFundingOpportunities = async (req, res) => {
+    try {
+        // Fetch all entries from the FundingOpportunity model
+        const fundingOpportunities = await FundingOpportunity.find();
+        // Send the funding opportunities as a JSON response
+        res.json({ fundingOpportunities });
+    } catch (error) {
+        // If an error occurs, send a 500 status with the error message
+        res.status(500).json({ message: error.message });
+    }
+};
+
 // Create user information
 exports.createUser = async (req, res) => {
     console.log(req.body)

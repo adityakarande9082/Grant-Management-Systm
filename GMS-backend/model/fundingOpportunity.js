@@ -1,18 +1,3 @@
-// const mongoose = require("mongoose");
-
-// //Define the schema
-// const fundingOpportunitySchema = new mongoose.Schema({
-//     name:{
-//         type:String,
-//         required:true,
-//     }
-// });
-
-// //export the model
-// module.exports = mongoose.model("fundingopportunity", fundingOpportunitySchema);
-
-
-
 
 
 const mongoose = require("mongoose");
@@ -120,8 +105,5 @@ const fundingOpportunitySchema = new mongoose.Schema({
     }
 });
 
-
-//export the model
-// module.exports = mongoose.model("fundingopportunity", fundingOpportunitySchema);
 const FundingOpportunity = mongoose.model('FundingOpportunity', fundingOpportunitySchema);
 module.exports = FundingOpportunity;

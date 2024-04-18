@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="pt-1.5 font-dm text-sm font-medium text-white">
-            <a href="#">Funding Opportunities</a>
+            <Link to="/fundingOppo">Funding Opportunities</Link>
           </li>
           {Object.keys(userdata).length > 0 && (
             <>

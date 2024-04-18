@@ -8,6 +8,7 @@ import Copyright from './components/Copyright';
 import ForgotPassword from './pages/ForgotPassword'; // Import ForgotPassword without curly braces
 import SetPassword from './pages/SetPassword';
 import toast, { Toaster } from 'react-hot-toast';
+import FundingOppo from './pages/FundingOppo';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/forgotPassword' element={<ForgotPassword />} />
         <Route path='/register' element={<Registration />} />
+        <Route path='/fundingOppo' element={<FundingOppo/>}/>
         <Route path='/setPassword/:userId' element={<SetPassword />} />
+        <Route path='/setPassword/:id/:token' element={<SetPassword/>}/>
       </Routes>
       <Toaster
         position="bottom-right"
